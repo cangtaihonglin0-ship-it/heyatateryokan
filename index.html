@@ -418,7 +418,7 @@
             const file = e.target.files[0];
             if (file) {
                 customFileUrl = URL.createObjectURL(file);
-                customAudio.src = customFileUrl;
+                customAudio.src = 'bgm.mp3';
                 customAudio.play().catch(e => console.log('Audio play blocked:', e));
             }
         });
